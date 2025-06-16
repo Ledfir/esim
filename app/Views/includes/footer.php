@@ -127,4 +127,170 @@
             </div> 
         </div>
     </div>
-</div> 
+</div>
+<!-- Modal de compatibilidad -->
+<div class="modal fade" id="modalCompatibility" tabindex="-1" aria-labelledby="modalCompatibilityLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-white border-0">
+            <div class="modal-header bg-transparent border-0">
+                <h1 class="modal-title fs-5" id="modalCompatibilityLabel">Verifica tu compatibilidad</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body bg-transparent border-0">
+                <div id="segCompatibility">
+                    <div class="">
+                        <h3>Verifica si tu dispositivo es compatible con eSIM. Este paso es obligatorio.</h3>
+                        <span>Si tu dispositivo no está incluido en ninguna de las listas, es probable que no sea compatible con la tecnología eSIM.</span>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-4 m-0 p-1 d-grid">
+                            <button class="btn btn-compatibility border-radius-20 btn-verification" data-brand="apple">
+                                <img src="<?= base_url('/images/svg/apple-logo.svg') ?>" alt="Logo Apple" width="48px">
+                            </button>
+                        </div>
+                        <div class="col-12 col-md-4 m-0 p-1 d-grid">
+                            <button class="btn btn-compatibility border-radius-20 btn-verification" data-brand="samsung">
+                                <img src="<?= base_url('/images/svg/samsung-logo.svg') ?>" alt="Logo Samsung" width="48px">
+                            </button>
+                        </div>
+                        <div class="col-12 col-md-4 m-0 p-1 d-grid">
+                            <button class="btn btn-compatibility border-radius-20 btn-verification" data-brand="google-pixel">
+                                <img src="<?= base_url('/images/svg/google-pixel-logo.svg') ?>" alt="Logo Google Pixel" width="48px">
+                            </button>
+                        </div>
+                        <div class="col-12 col-md-4 m-0 p-1 d-grid">
+                            <button class="btn btn-compatibility border-radius-20 btn-verification" data-brand="other">
+                                <span>Otra marca</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div id="segCompatibilityApple">
+                    <div class="">
+                        <h3>Selecciona tu iPhone.</h3>
+                        <span>Para saber cuál es tu dispositivo Apple ve a Ajustes → General → Acerca de...</span>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-4 m-0 p-1 d-grid">
+                            <button class="btn btn-compatibility border-radius-20 btn-verification" data-brand="apple-success">
+                                <span>iPhone 16, Pro</span>
+                            </button>
+                        </div>
+                        <div class="col-12 col-md-4 m-0 p-1 d-grid">
+                            <button class="btn btn-compatibility border-radius-20 btn-verification" data-brand="apple-success">
+                                <span>iPhone 15, Plus, Pro, Pro Max</span>
+                            </button>
+                        </div>
+                        <div class="col-12 col-md-4 m-0 p-1 d-grid">
+                            <button class="btn btn-compatibility border-radius-20 btn-verification" data-brand="apple-success">
+                                <span>iPhone 14, Plus, Pro, Pro Max</span>
+                            </button>
+                        </div>
+                        <div class="col-12 col-md-4 m-0 p-1 d-grid">
+                            <button class="btn btn-compatibility border-radius-20 btn-verification" data-brand="apple-success">
+                                <span>iPhone 13, Mini, Pro, Pro Max</span>
+                            </button>
+                        </div>
+                        <div class="col-12 col-md-4 m-0 p-1 d-grid">
+                            <button class="btn btn-compatibility border-radius-20 btn-verification" data-brand="apple-success">
+                                <span>iPhone 12, Mini, Pro, Pro Max</span>
+                            </button>
+                        </div>
+                        <div class="col-12 col-md-4 m-0 p-1 d-grid">
+                            <button class="btn btn-compatibility border-radius-20 btn-verification" data-brand="apple-success">
+                                <span>iPhone 11, Pro, Pro Max</span>
+                            </button>
+                        </div>
+                        <div class="col-12 col-md-4 m-0 p-1 d-grid">
+                            <button class="btn btn-compatibility border-radius-20 btn-verification" data-brand="apple-success">
+                                <span>iPhone XS, XS Max, XR</span>
+                            </button>
+                        </div>
+                        <div class="col-12 col-md-4 m-0 p-1 d-grid">
+                            <button class="btn btn-compatibility border-radius-20 btn-verification" data-brand="apple-success">
+                                <span>iPhone SE (2020, 2022)</span>
+                            </button>
+                        </div>
+                        <div class="col-12 col-md-4 m-0 p-1 d-grid">
+                            <button class="btn btn-compatibility border-radius-20 btn-verification" data-brand="apple-other">
+                                <span>Otro</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div id="segCompatibilityApleeSuccess">
+                    <div class="">
+                        <h3>¡Tu dispositivo Apple es compatible!</h3>
+                    </div>
+                    <p>
+                        Recuerda que tu teléfono debe estar libre de restricciones de operadores para que puedas usar la eSIM<br>
+                        *En los modelos iPhone 13 y 14, puede tener dos eSIM activadas al mismo tiempo.<br>
+                        *Los iPhone de China continental y los dispositivos iPhone de Hong Kong y Macao (excepto el iPhone 13 mini, el iPhone 12 mini, el iPhone SE 2020 y el iPhone XS) no son compatibles con eSIM.
+                    </p>
+                </div>
+                <div id="segCompatibilityAppleOther">
+                    <div class="">
+                        <h3>Comprueba la compatibilidad de tu dispositivo</h3>
+                        <p>
+                            Ve a Ajustes → Conexiones → Gestor de tarjetas SIM.<br>
+                            Si tienes la opción "Añadir plan móvil", tu smartphone admite eSIM.
+                        </p>
+                    </div>
+                </div>
+                <div id="segCompatibilitySamsung">
+                    <div class="">
+                        <h3>Selecciona tu móvil Samsung</h3>
+                        <p>
+                            Para saber cuál es tu dispositivo Samsung ve a Ajustes → Acerca del teléfono → Nombre del producto.
+                        </p>
+                        <div class="row">
+                            <div class="col-12 col-md-4 m-0 p-1 d-grid">
+                                <button class="btn btn-compatibility border-radius-20 btn-verification" data-brand="samsung-success">
+                                    <span>Galaxy S24, S24 +, S24 Ultra, S24 SE</span>
+                                </button>
+                            </div>
+                            <div class="col-12 col-md-4 m-0 p-1 d-grid">
+                                <button class="btn btn-compatibility border-radius-20 btn-verification" data-brand="samsung-success">
+                                    <span>Galaxy S23, S23 +, S23 Ultra</span>
+                                </button>
+                            </div>
+                            <div class="col-12 col-md-4 m-0 p-1 d-grid">
+                                <button class="btn btn-compatibility border-radius-20 btn-verification" data-brand="samsung-success">
+                                    <span>Galaxy S22, S22 +, S22 Ultra</span>
+                                </button>
+                            </div>
+                            <div class="col-12 col-md-4 m-0 p-1 d-grid">
+                                <button class="btn btn-compatibility border-radius-20 btn-verification" data-brand="samsung-success">
+                                    <span>Galaxy S21, S21 +, S21 Ultra, 5G</span>
+                                </button>
+                            </div>
+                            <div class="col-12 col-md-4 m-0 p-1 d-grid">
+                                <button class="btn btn-compatibility border-radius-20 btn-verification" data-brand="samsung-success">
+                                    <span>Galaxy S20, S20 +, S20 Ultra</span>
+                                </button>
+                            </div>
+                            <div class="col-12 col-md-4 m-0 p-1 d-grid">
+                                <button class="btn btn-compatibility border-radius-20 btn-verification" data-brand="samsung-success">
+                                    <span>Note 20, Ultra</span>
+                                </button>
+                            </div>
+                            <div class="col-12 col-md-4 m-0 p-1 d-grid">
+                                <button class="btn btn-compatibility border-radius-20 btn-verification" data-brand="samsung-success">
+                                    <span>Galaxy Z</span>
+                                </button>
+                            </div>
+                            <div class="col-12 col-md-4 m-0 p-1 d-grid">
+                                <button class="btn btn-compatibility border-radius-20 btn-verification" data-brand="samsung-success">
+                                    <span>Otro</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer bg-transparent border-0">
+                <button type="button" class="btn btn-purple" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>

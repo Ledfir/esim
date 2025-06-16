@@ -32,7 +32,7 @@
                         <h2 class="price-home">$2,435.00 <span class="subtitle-price">MXN</span></h2>
                     </div>
                     <div class="mb-3 text-end w-100">
-                        <button class="btn btn-compatibility">
+                        <button class="btn btn-compatibility" id="btnVerification" data-bs-toggle="modal" data-bs-target="#modalCompatibility">
                             Verificar compatibilidad <img src="<?= base_url('/images/svg/cellphone-check.svg') ?>" alt="Telefono celular con icono de verificacion" height="24px">
                         </button>
                     </div>
